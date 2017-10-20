@@ -1,0 +1,195 @@
+//
+// Site css
+// --------------------------------------------
+
+html, body {
+	margin: 0 !important;
+	//height: 100%;
+	font-family: 'Roboto-Regular';
+
+}
+
+
+.content{
+
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+
+}
+h1,h2{
+	font-family: 'Roboto-Light';
+	font-size: 42px;
+	text-align: center;
+	padding: 20px 0;
+	color: #003e42;
+	text-transform: uppercase;
+}
+
+
+h2{
+
+	margin: 60px 0;
+
+}
+
+.info{
+
+	width: 100%;
+	height: 716px;
+	background: url("../images/back.jpg");
+	background-size: cover;
+	padding: 63px 0;
+
+	.content{
+
+		@include clear();
+
+		>div{
+			width: 590px;
+			height: 590px;
+			background: #ffffff;
+			float: left;
+
+
+			h3{
+				font-size:36px;
+				font-weight: bold;
+				margin: 0 0 20px 0;
+				color: #e4b79d;;
+
+
+
+			}
+
+			p{
+				font-size: 24px;
+				line-height: 36px;
+
+
+				span{
+					color: #e4b79d;
+					display: inline-block;
+					/* margin-right: 6px; */
+					width: 25px;
+				}
+
+			}
+		}
+
+		.info-left{
+			text-align: center;
+			@include middle();
+			padding: 25px ;
+
+			>img{
+				width: 270px;
+			}
+
+			h3{
+				margin-top: 40px;
+			}
+		}
+
+		.info-right{
+
+			float: right;
+			padding: 63px 61px 0 61px;
+
+
+			h3{
+
+				&:last-of-type{
+					margin-top: 70px;
+				}
+			}
+
+
+		}
+	}
+}
+
+
+.projects{
+
+	@include clear();
+
+	.portfolio-posts{
+
+		position: relative;
+		width: 50%;
+		float: left;
+		height: 470px;
+		overflow: hidden;
+
+
+		img{
+			min-width: 100%;
+			height: 100%;
+		}
+
+		.overlay {
+			background: rgba(0, 0, 0, 0.4);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			text-align: center;
+			@include middle();
+
+			.bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 0;
+				opacity: 0;
+				-o-transition: opacity 1s ease 0s;
+				transition: opacity 1s ease 0s;
+				-moz-transition: opacity 1s ease 0s;
+				-webkit-transition: opacity 1s ease 0s;
+			}
+
+			.post-content-info{
+				width: 58%;
+				display: inline-block;
+				vertical-align: middle;
+				position: relative;
+				z-index: 1;
+
+
+				h3 {
+					font-size: 70px;
+					color: #fff;
+					font-family: "Roboto Light";
+					text-transform: uppercase;
+					display: inline-block;
+
+					&:after {
+						content: '';
+						width: 30%;
+						margin: 30px auto;
+						height: 2px;
+						background: #fff;
+						display: block;
+						-o-transition: width 1s ease 0s;
+						transition: width 1s ease 0s;
+						-moz-transition: width 1s ease 0s;
+						-webkit-transition: width 1s ease 0s;
+					}
+				}
+
+				p{
+					font-size: 24px;
+					line-height: 30px;
+					color: #fff;}
+
+
+			}
+		}
+	}
+
+
+}

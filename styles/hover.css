@@ -1,0 +1,7 @@
+.projects .portfolio-posts a:hover .bg {
+  opacity: 0.9;
+}
+
+.projects .portfolio-posts a:hover .overlay .post-content-info h3:after {
+  width: 60%;
+}

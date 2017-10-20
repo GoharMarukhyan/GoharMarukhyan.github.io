@@ -1,0 +1,34 @@
+.projects{
+
+  .portfolio-posts{
+
+    a{
+
+      &:hover{
+
+        .bg{
+
+          opacity: 0.9;
+        }
+
+
+        .overlay{
+
+          .post-content-info{
+
+            h3{
+
+              &:after {
+                width: 60%;
+              }
+
+            }
+
+          }
+        }
+
+
+      }
+    }
+  }
+}
