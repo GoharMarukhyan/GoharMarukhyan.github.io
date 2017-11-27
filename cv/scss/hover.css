@@ -1,0 +1,56 @@
+.icon-bar li a:hover img {
+  /* padding: 3px;
+			 	-webkit-transform: rotateY(360deg);
+			 	-moz-transform: rotateY(360deg);
+			 	-o-transform: rotateY(360deg);
+			 	transform: rotateY(360deg); */
+}
+
+#nav-icon1:hover {
+  transform: scale(1.1);
+  /* & span{
+		    -webkit-box-shadow: 0 0 5px 2px #504c4c;
+		    -moz-box-shadow: 0 0 5px 2px #504c4c;
+		    -o-box-shadow: 0 0 5px 2px #504c4c;
+		    box-shadow: 0 0 5px 2px #504c4c;
+		} */
+}
+
+/* Portfolio */
+.portfolio-nav ul li:hover {
+  color: #12c2bc;
+  border-color: #12c2bc;
+}
+
+.portfolio-nav ul li a:hover {
+  color: #12c2bc;
+}
+
+.portfolio-nav ul li.active {
+  border-color: #12c2bc;
+}
+
+.portfolio-nav ul li.active a {
+  color: #12c2bc;
+}
+
+.for-hover:hover {
+  padding: 0;
+}
+
+.for-hover:hover .portfolio-hover-div {
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.for-hover:hover .fa-plus {
+  visibility: visible;
+  transform: rotate(180deg);
+}
+
+.for-hover:hover .port-info {
+  margin-top: -90px;
+  margin-left: 30px;
+}
+
+/* Portfolio */

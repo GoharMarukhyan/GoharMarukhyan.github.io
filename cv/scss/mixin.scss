@@ -1,0 +1,27 @@
+/*
+	cdCss functions
+	--------------------
+*/
+
+
+
+@mixin middle() {
+	&:after {
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+}
+
+@mixin clear() {
+	&:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+$main-green: #12c2bc; 
+$dark-blue: #326273;
+$dark-font: #545454; 
