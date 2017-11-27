@@ -1,0 +1,557 @@
+@media screen and (max-width: 1090px){
+  .site-header {
+    .site-header-cont {
+      width: 768px;
+    }
+
+    .site-header-bottom-block {
+      top: 60px;
+
+      &.open-menu {
+        height: 270px;
+      }
+
+      .site-header-bottom-block-cont {
+        width: 768px;
+      }
+    }
+
+
+  }
+
+  .home-page {
+    padding: 60px 0 0 0;
+    .top-baner-block {
+
+      .middle {
+        width: 650px;
+
+        h2 {
+          font-size: 49px;
+          line-height: 39px;
+        }
+
+        h3 {
+          font-size: 25px;
+          line-height: 25px;
+          margin: 20px 0 0 0;
+        }
+
+        .addres-row {
+          input {
+            width: 490px;
+          }
+        }
+
+        .bottom-block {
+          margin: 35px 0 0 0;
+
+          span {
+            width: 150px;
+          }
+
+          button {
+            width: 200px;
+            font-size: 21px;
+          }
+        }
+      }
+    }
+
+    @include homePageFullBlock1024();
+
+    @include homePageCaruselBlock1024();
+
+    .home-page-about-block {
+      height: 450px;
+
+      .left-block {
+
+        .text-block {
+          width: 350px;
+          padding: 120px 60px 0 0;
+
+          p {
+            font-size: 16px;
+            line-height: 22px;
+            height: 199px;
+          }
+
+          a {
+            margin: 20px 0 0 0;
+            font-size: 16px;
+            line-height: 16px;
+
+            &:before {
+              margin: 0 10px 4px 0;
+              height: 2px;
+              width: 35px;
+            }
+          }
+        }
+      }
+
+      .right-block {
+
+        .info-block {
+          top: 80px;
+          width: 350px;
+
+          h2 {
+            margin: 10px 0 0 0;
+            font-size: 40px;
+            line-height: 33px;
+          }
+        }
+      }
+    }
+
+    .become-a-chef {
+      height: 300px;
+
+      .become-a-chef-cont {
+        width: 768px;
+        padding: 0 40px 0 0;
+
+        .middle {
+          width: 310px;
+
+          h2 {
+            font-size: 30px;
+            line-height: 25px;
+          }
+
+          p {
+            margin: 15px 0 0 0;
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          a {
+            width: 130px;
+            height: 35px;
+            margin: 15px 0 0 0;
+            line-height: 34px;
+            font-size: 16px;
+
+          }
+
+          &:before {
+            width: 350px;
+            height: 2px;
+            top: 89px;
+          }
+        }
+      }
+    }
+
+    @include teamCaruselBlock1024();
+  }
+
+  .chefs-page {
+    padding: 60px 0 0 0;
+
+    @include pagesTopBanerBlock1024();
+
+    .chefs-top-info-block {
+      padding: 60px 0 40px 0;
+
+      .chefs-top-info-block-cont {
+        width: 768px;
+
+        .left-block {
+          width: 48%;
+
+          .image-block {
+            height: 245px;
+          }
+        }
+
+        .right-block {
+          width: 50%;
+          height: 245px;
+
+          .text-block {
+            padding: 31px 0 20px 65px;
+            h2 {
+              font-size: 22px;
+              line-height: 25px;
+            }
+
+            p {
+              margin: 20px 0 0 0;
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+
+          &:after {
+            width: 26px;
+            height: 14px;
+            left: 2px;
+            margin: -7px 0 0 0;
+          }
+        }
+      }
+    }
+
+    .chefs-can-block {
+      height: 380px;
+      border-top: 3px solid #f25a43;
+
+      .chefs-can-block-cont {
+        width: 768px;
+
+        .middle {
+          width: 400px;
+        }
+      }
+    }
+
+    .chefs-bottom-info-block {
+      height: 350px;
+      margin: 0 0 60px 0;
+
+      .chefs-top-info-block-cont {
+        width: 768px;
+
+        .text-block {
+          width: 350px;
+
+          h2 {
+            font-size: 28px;
+            line-height: 28px;
+
+          }
+        }
+      }
+    }
+  }
+
+  .about-page {
+    padding: 60px 0 0 0;
+
+    @include pagesTopBanerBlock1024();
+
+    .welcome-block {
+      padding: 40px 0 40px 0;
+
+      .welcome-block-cont {
+        width: 768px;
+
+        .left-block {
+          padding: 15px 10px 0 0;
+
+          h2 {
+            font-size: 28px;
+            line-height: 28px;
+          }
+
+          p {
+            margin: 20px 0 0 0;
+            font-size: 18px;
+            line-height: 24px;
+            height: 73px;
+          }
+        }
+
+        .right-block {
+          .image-block {
+            height: 236px;
+          }
+        }
+      }
+    }
+
+    .about-page-chefs-block {
+      height: 400px;
+
+      .left-block {
+        a {
+          .image-block {
+            h2 {
+              font-size: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+
+      .right-block {
+        a {
+          .image-block {
+            h2 {
+              font-size: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .special-selecions-block {
+      padding: 60px 0;
+
+      .special-selecions-block-cont {
+        width: 768px;
+
+        .title-block {
+          h2 {
+            font-size: 28px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    @include newsletterBlock1024;
+  }
+
+  .contact-page {
+    padding: 60px 0 0 0;
+
+    @include pagesTopBanerBlock1024();
+
+    .contact-page-cont {
+      width: 768px;
+      margin: 50px auto 50px;
+
+      .left-block {
+
+        .map-block {
+          height: 303px;
+        }
+      }
+
+      .right-block {
+
+        form {
+          .title-block {
+            h2 {
+              font-size: 28px;
+              line-height: 28px;
+            }
+          }
+
+          ul {
+
+            li {
+              margin: 30px 0 0 0;
+              input {
+                height: 40px;
+              }
+
+              textarea {
+                height: 150px;
+              }
+
+              button {
+                height: 40px;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .customers-page {
+    padding: 60px 0 0 0;
+
+    @include pagesTopBanerBlock1024();
+
+    .customers-page-top-block {
+      padding: 60px 0 60px 0;
+
+      .customers-page-top-block-cont {
+        width: 768px;
+
+        .block {
+          width: 246px;
+          margin: 0 0 0 15px;
+
+          .image-block {
+            height: 210px;
+          }
+
+          .title-block {
+            h2 {
+              font-size: 22px;
+              line-height: 22px;
+              margin: 20px 0 0 0;
+
+              &:after {
+                margin: 10px 0 0 0;
+                width: 70px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .customers-page-full-block {
+      height: 350px;
+
+      .customers-page-full-block-cont {
+        width: 768px;
+
+        ul {
+          width: 400px;
+        }
+      }
+    }
+
+    @include teamCaruselBlock1024();
+
+    .customers-can-block {
+      height: 375px;
+    }
+
+    @include newsletterBlock1024();
+  }
+
+  .profile-page {
+    padding: 60px 0 0 0;
+    @include pagesTopBanerBlock1024();
+
+    .profile-top-info-block {
+      padding: 50px 0 80px;
+      .profile-top-info-block-cont {
+        width: 768px;
+
+        .left-block {
+
+          .image-block {
+            width: 350px;
+            height: 379px;
+          }
+
+          &:after {
+            width: 8px;
+            height: 340px;
+            left: -8px;
+            margin: -170px 0 0 0;
+          }
+        }
+
+        .right-block {
+          width: 380px;
+
+          .text-block {
+            padding: 10px 0 0 0;
+
+            h2 {
+              font-size: 24px;
+              line-height: 24px;
+            }
+
+            ul {
+              margin: 40px 0 0 0;
+
+              li {
+                padding: 18px 0;
+
+                span {
+
+                  &:last-child {
+                    margin: -5px 0 0 20px;
+                    font-size: 18px;
+                    width: 320px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .published-meels-block {
+      padding: 30px 0 50px;
+      .published-meels-block-cont {
+        width: 768px;
+
+        .ak-row {
+          margin: 30px 0 0 0;
+
+          .block {
+            width: 242px;
+            margin: 0 0 0 20px;
+
+
+            .image-block {
+              height: 176px;
+            }
+
+            .text-block {
+              padding: 25px 18px;
+              box-shadow: 0px 0px 5px rgba(5, 5, 5, 0.1);
+
+              h2 {
+                font-size: 20px;
+                line-height: 20px;
+                font-family: "RobotoMedium";
+                color: #f25a43;
+                margin: 0;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 23px;
+                font-family: "RobotoMedium";
+                color: #848484;
+                margin: 25px 0 0 0;
+                white-space: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 46px;
+              }
+
+              a {
+                width: 124px;
+                height: 30px;
+                border: 1px solid #f3ada2;
+                text-align: center;
+                line-height: 30px;
+                font-size: 16px;
+                font-family: "RobotoMedium";
+                color: #f49485;
+                display: block;
+                text-decoration: none;
+                margin: 20px 0 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .site-footer {
+    padding: 50px 0 0 0;
+    height: 460px;
+    border-top: 3px solid #f25a43;
+    border-bottom: 3px solid #f25a43;
+
+    .site-footer-cont {
+      width: 768px;
+
+      .left-block {
+
+        h2 {
+          font-size: 40px;
+          line-height: 42px;
+          width: 260px;
+
+          &:before {
+            width: 300px;
+            margin: 0 0 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
