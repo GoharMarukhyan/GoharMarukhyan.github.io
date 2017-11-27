@@ -45,91 +45,68 @@ $(window).load(function() {
       }
     });
 
-	
+
+	if ( $(window).width() >= 768 ) {
+		var ellLength = document.body.childNodes.length;
+		var sc = document.createElement('script');
+		var lin = document.createElement('link');
+		sc.src = 'libs/onepage-scroll-master/jquery.onepage-scroll.js';
+		sc.type = 'text/javascript';
+		lin.href = 'libs/onepage-scroll-master/onepage-scroll.css';
+		lin.rel = 'stylesheet';
+		if(typeof sc['async'] !== 'undefined') {
+			sc.async = true;
+		}
+		if(typeof lin['async'] !== 'undefined') {
+			lin.async = true;
+		}
+		//console.log(ellLength);
+		document.getElementsByTagName('body')[0].appendChild(sc);
+		document.getElementsByTagName('head')[0].appendChild(lin);
+
+		setTimeout(function(){
+			$(".main").onepage_scroll();
+		}, 200);
+
+
+	}
+	/*
+	 if ($(window).width() >= 767 ) {
+	 var ellLength = document.body.childNodes.length;
+	 var sc = document.createElement('script');
+	 var lin = document.createElement('link');
+	 sc.src = 'libs/onepage-scroll-master/jquery.onepage-scroll.js';
+	 sc.type = 'text/javascript';
+	 lin.href = 'libs/onepage-scroll-master/onepage-scroll.css';
+	 lin.rel = 'stylesheet';
+	 if(typeof sc['async'] !== 'undefined') {
+	 sc.async = true;
+	 }
+	 if(typeof lin['async'] !== 'undefined') {
+	 lin.async = true;
+	 }
+	 //console.log(ellLength);
+	 document.getElementsByTagName('body')[0].appendChild(sc);
+	 document.getElementsByTagName('head')[0].appendChild(lin);
+
+	 setTimeout(function(){
+	 $(".main").onepage_scroll();
+	 }, 200);
+	 }*/
+
+
+	if ( $(window).width() <= 767 ) {
+		//alert("heighty poqra 600");
+		$('.main').removeClass('main');
+		$("div").remove(".mi-ban");
+	}
 
 
 
-    /*$(".onepage-pagination li a").click(function (){
-    	function myFunction() {
-    	    setTimeout(function(){ 
-    	    	  if ($('#section3').hasClass('active')) {
-              $('#section3 > .container > .row > div').addClass('active-position');
-            }
-
-            if ($('#section4').hasClass('active')) {
-              $('#section4 .container > .row > div > div').addClass('active-position');
-            }
-
-        if($('#section3').hasClass('active')) {
-        if ( $(window).width() <= 1366) { 
-          circleAtributs(90);
-        } else {
-          circleAtributs();
-        }
-        
-        scrollFlag = true;
-        return scrollFlag;
-        }
-    	     }, 700);
-    	}
-
-    	myFunction();
-        
-      });*/
-/*
-    $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
-      event.preventDefault();
-
-    });
-*/
-/*
-	iconBarElement.on('click', function(e){
-			var elIndex = $(this).parent().index();
-			iconBarElement.removeClass('active-menu-item');
-			$(this).addClass('active-menu-item');
-			menuHoverItem(elIndex);
-
-			$('html,body').stop(true, true).animate({
-				scrollTop: $('.paralax').eq(elIndex).offset().top
-			});
-
-			$('.paralax').removeClass('active-section');
-			$('.paralax').eq(elIndex).addClass('active-section');
-
-			e.preventDefault();
-	})
-	.on( "mouseenter", function() {
-		var elIndex = $(this).parent().index();
-	    $(this).find('img').attr("src","images/menuicons/" + menuIconsHoverArr[elIndex]);
-  	})
-	.on( "mouseleave", function() {
-		var elIndex = $(this).parent().index();
-	  	for (var i = 0; i <= menuIconsHoverArr.length; i++) {
-	  		iconBarElement.eq(i).find('img').attr("src","images/menuicons/" + menuIconsArr[i])
-	  	}
-	  	var activiMenuItem = $('.icon-bar > ul ').find('a.active-menu-item').parent().index();
-	  	$('.active-menu-item').find('img').attr("src","images/menuicons/" + menuIconsHoverArr[activiMenuItem]);
-	});
-*/
 
 
-	/*Navbar*/
 
-  /*  $("#nav-icon1").click(function(){
-    	$(".icon-bar").toggle(function() {
-    		$(this).animate({right: 0}, {duration: 'fast'});
-   		});    		 
-    });
-
-    $('#nav-icon1').click(function(){
-    	$(this).toggleClass('open');
-    });*/
-    /*Navbar end*/
-
-
-    /*Contact*/
-    
-    		$(document).on('click', function(evt){
+		$(document).on('click', function(evt){
     			$('.for-click').each(function() {
     			if ($(evt.target).parent().attr('class') == 'for-click') {
 
@@ -155,10 +132,8 @@ $(window).load(function() {
     			
     		});
 
-    /*Contact end*/
 
-  /* $( window ).resize(function() {
-		resizeFunction();
-	});*/
 
-});/*End of all*/
+})
+
+

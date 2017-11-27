@@ -521,7 +521,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
 
-	if ( $(window).width() >= 768 ) { 
+	if ( $(window).width() >= 768 ) {
 		var ellLength = document.body.childNodes.length;
 		var sc = document.createElement('script');
 		var lin = document.createElement('link');
@@ -531,10 +531,10 @@
 		 lin.rel = 'stylesheet';
 		 if(typeof sc['async'] !== 'undefined') {
 		    sc.async = true;
-		 }  
+		 }
 		 if(typeof lin['async'] !== 'undefined') {
 		    lin.async = true;
-		 } 
+		 }
 		 //console.log(ellLength);
 		 document.getElementsByTagName('body')[0].appendChild(sc);
 		 document.getElementsByTagName('head')[0].appendChild(lin);
@@ -547,40 +547,40 @@
 	} 
 /*
 	 if ($(window).width() >= 767 ) {
-		var ellLength = document.body.childNodes.length;
-		var sc = document.createElement('script');
-		var lin = document.createElement('link');
-		 sc.src = 'libs/onepage-scroll-master/jquery.onepage-scroll.js';
-		 sc.type = 'text/javascript';
-		 lin.href = 'libs/onepage-scroll-master/onepage-scroll.css';
-		 lin.rel = 'stylesheet';
-		 if(typeof sc['async'] !== 'undefined') {
-		    sc.async = true;
-		 }  
-		 if(typeof lin['async'] !== 'undefined') {
-		    lin.async = true;
-		 } 
-		 //console.log(ellLength);
-		 document.getElementsByTagName('body')[0].appendChild(sc);
-		 document.getElementsByTagName('head')[0].appendChild(lin);
+	 var ellLength = document.body.childNodes.length;
+	 var sc = document.createElement('script');
+	 var lin = document.createElement('link');
+	 sc.src = 'libs/onepage-scroll-master/jquery.onepage-scroll.js';
+	 sc.type = 'text/javascript';
+	 lin.href = 'libs/onepage-scroll-master/onepage-scroll.css';
+	 lin.rel = 'stylesheet';
+	 if(typeof sc['async'] !== 'undefined') {
+	 sc.async = true;
+	 }
+	 if(typeof lin['async'] !== 'undefined') {
+	 lin.async = true;
+	 }
+	 //console.log(ellLength);
+	 document.getElementsByTagName('body')[0].appendChild(sc);
+	 document.getElementsByTagName('head')[0].appendChild(lin);
 
-		 setTimeout(function(){
-		 	$(".main").onepage_scroll();
-		 }, 200);
-	}*/
+	 setTimeout(function(){
+	 $(".main").onepage_scroll();
+	 }, 200);
+	 }*/
 
 
-	if ( $(window).width() <= 767 ) { 
+	if ( $(window).width() <= 767 ) {
 		//alert("heighty poqra 600");
 		$('.main').removeClass('main');
 		$("div").remove(".mi-ban");
 	}
 
-/*	if ($(window).width() <= 767) {
-		alert("widthy poqra 767");
-		$('.main').removeClass('main');
-		$("div").remove(".mi-ban");
-	}*/
+	/*	if ($(window).width() <= 767) {
+	 alert("widthy poqra 767");
+	 $('.main').removeClass('main');
+	 $("div").remove(".mi-ban");
+	 }*/
 	</script>
 	<!-- Latest compiled bootstrap -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
